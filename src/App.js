@@ -2,18 +2,13 @@
 import './App.css';
 import './main.js';
 
-function App() {
-  return (
-    <div className="App">
-      <div class="TextArea">
-        <a class="content">
-          Trend line
-          Main article: Trend estimation
-          A trend line represents a trend, the long-term movement in time series data after other components have been accounted for. It tells whether a particular data set (say GDP, oil prices or stock prices) have increased or decreased over the period of time. A trend line could simply be drawn by eye through a set of data points, but more properly their position and slope is calculated using statistical techniques like linear regression. Trend lines typically are straight lines, although some variations use higher degree polynomials depending on the degree of curvature desired in the line.
 
-          Trend lines are sometimes used in business analytics to show changes in data over time. This has the advantage of being simple. Trend lines are often used to argue that a particular action or event (such as training, or an advertising campaign) caused observed changes at a point in time. This is a simple technique, and does not require a control group, experimental design, or a sophisticated analysis technique. However, it suffers from a lack of scientific validity in cases where other potential changes can affect the data.
-        </a>
-      </div>
+
+function App() {
+
+  return (
+    <div>
+      <h1 class="title">Eyes on the screen</h1>
       <div class="keyboard">
         <ul class="row row-0">
           <li class="pinky" id="esc">ESC</li>
@@ -77,8 +72,10 @@ function App() {
           <li class="pinky" id="right-shift">SHIFT</li>
         </ul>
       </div>
+      <h1 class="title">Hands on the keyboard</h1>
 
-    </div>
+
+    </div >
   );
 }
 

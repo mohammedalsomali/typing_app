@@ -5,42 +5,6 @@
   
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
 body {
   background-color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -49,7 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .title {
@@ -64,7 +28,6 @@ body {
 .keyboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .row {
@@ -133,17 +96,13 @@ li {
   color: darkorange;
 }
 
-
 .pointer1st { 
   background-color: gold;
   border: 2px solid gold;
 }
-
-
 .pointer1st.selected {
   color: gold;
 }
-
 
 .pointer2nd { 
   background-color: khaki;
@@ -176,7 +135,6 @@ li {
 	        animation: hit 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-
 @-webkit-keyframes hit {
   0% {
     -webkit-transform: scale(1.2);
@@ -197,7 +155,6 @@ li {
             transform: scale(1);
   }
 }
-
 
 @-webkit-keyframes vibrate-1 {
   0% {
@@ -225,8 +182,6 @@ li {
             transform: translate(0);
   }
 }
-
-
 @keyframes vibrate-1 {
   0% {
     -webkit-transform: translate(0);
@@ -252,25 +207,4 @@ li {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-}
-
-
-#root {
-  height: 100%;
-  width: 100%;
-}
-
-
-.TextArea {
-  display: flex;
-  align-content: center;
-}
-
-
-a {
-  width: 70%;
-  height: 50%;
-  background-color: aqua;
-  margin-left: 15%;
-  margin-top: 7%;
 }
