@@ -16,6 +16,30 @@ body {
   height: 100vh;
 }
 
+
+.cotainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+}
+
+
+
+.TextArea {
+  display: flex;
+  align-content: flex-end;
+  width: 1025px;
+
+}
+
+
+p {
+  color: aliceblue;
+  font-size: 2em;
+  text-align: center;
+  word-break: break-all;
+  
+}
 .title {
   color: mintcream;
   text-transform: uppercase;

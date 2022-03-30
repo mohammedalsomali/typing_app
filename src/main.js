@@ -1,16 +1,26 @@
 
 document.addEventListener("keyup", event => {
-    const keyPressed = String.fromCharCode(event.keyCode);
-    const keyElement = document.getElementById(keyPressed);
-    const highlightedKey = document.querySelector(".selected");
+    let textBox = document.getElementById('textbox');
+    let keyPressed = event.key;
+    if(keyPressed == 'Backspace') {
+        textBox.innerHTML = textBox.innerHTML.substring(0,textBox.innerHTML.length-1)
 
-    keyElement.classList.add("hit")
+    }
+    if(keyPressed.length > 1){
+        return
+    }
+    textBox.innerHTML += keyPressed;
+    let keyElement = document.getElementById(keyPressed.toUpperCase());
+    
+
+    console.log(keyPressed)
+    keyElement.classList.add("hit");
     keyElement.addEventListener('animationend', () => {
-        console.log(keyElement);
-        keyElement.classList.remove("hit")
+        keyElement.classList.remove('hit');
 
+        
     })
-
+    
 
 })
 

@@ -7,8 +7,12 @@ import './main.js';
 function App() {
 
   return (
-    <div>
-      <h1 class="title">Eyes on the screen</h1>
+    <div class="container">
+      <div class='TextArea'>
+        <p id='textbox'>
+
+        </p>
+      </div>
       <div class="keyboard">
         <ul class="row row-0">
           <li class="pinky" id="esc">ESC</li>
@@ -72,8 +76,7 @@ function App() {
           <li class="pinky" id="right-shift">SHIFT</li>
         </ul>
       </div>
-      <h1 class="title">Hands on the keyboard</h1>
-
+      
 
     </div >
   );
